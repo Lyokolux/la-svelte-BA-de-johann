@@ -34,21 +34,22 @@
 		max-width: 240px;
 		margin: 0 auto;
 		width: 80%;
+		font-family: Luciole;
 	}
 
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 1.5em;
 		font-weight: 100;
 	}
 
 	.big {
-		font-size: 2.9em;
+		font-size: 2.5em;
 	}
 
 	.date {
-		font-size: 1.1em;
+		font-size: 1.5em;
 		font-weight: 500;
 	}
 
@@ -56,13 +57,26 @@
 		main {
 			max-width: none;
 		}
+
+		h1 {
+			font-size: 3em;
+		}
+
+		.big {
+			font-size: 3em;
+		}
+
+		.date {
+			font-size: 1.8em;
+		}
 	}
 </style>
 
 <main>
 	<h1>
 		📝 Johann started his thesis (BA) the<br />
-		<span class="date">{startBaDate.toLocaleDateString()}</span>!
+		<span
+			class="date">{startBaDate.toLocaleDateString(window.navigator.languages[0])}</span>!
 	</h1>
 	<p>
 		<span class="date">{elapsedSeconds}</span>
