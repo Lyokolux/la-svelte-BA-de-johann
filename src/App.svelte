@@ -26,14 +26,11 @@
 
 <style>
 	main {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
-		width: 80%;
+		width: 90%;
 		font-family: Luciole;
 	}
 
@@ -60,6 +57,7 @@
 
 		h1 {
 			font-size: 3em;
+			margin-bottom: 0.5em;
 		}
 
 		.big {
@@ -74,24 +72,24 @@
 
 <main>
 	<h1>
-		📝 Johann started his thesis (BA) the<br />
+		📝 Johann started his thesis the<br />
 		<span
-			class="date">{startBaDate.toLocaleDateString(window.navigator.languages[0])}</span>!
+			class="date">{startBaDate.toLocaleDateString(window.navigator.languages[0])}</span>
+		!
 	</h1>
 	<p>
 		<span class="date">{elapsedSeconds}</span>
-		seconds have elapsed since the start of his BA
+		seconds have elapsed since the start !
 	</p>
 	<p>
 		So he is toiling at it since
 		<span class="date">{elapsedDays}</span>
-		days
-	</p>
-	<p>
+		days.
+		<br />
 		So he has gotten an extra bonus time of
 		<span class="date">{elapsedDays - 90}</span>
-		days
+		days.
 	</p>
 	<p>As far as we know, he is still working on it 😱</p>
-	<p class="big">{randomEmoji} Joahnn, you will make it ! {randomEmoji}</p>
+	<p class="big">{randomEmoji} Johann, you will make it ! {randomEmoji}</p>
 </main>
